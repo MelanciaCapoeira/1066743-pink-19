@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Пинк | Главная</title>
+    <title>Пинк | Фотографии</title>
   </head>
   <body>
     <header class="page-header">
@@ -99,6 +99,26 @@
             <p class="photo-users__like">Нравится: 2560</p>
           </li>
         </ul>
+      </section>
+      <section class="upload">
+        <h2 class="visually-hidden">Загрузить картинку PINK</h2>
+        <p class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="upload__wrapper upload-list">
+          <input class="upload-list__img" type="file" id="user-img" name="user-img" accept=".png, .jpg, .jpeg">
+          <form  class="upload-list__form" method="GET" action="https://echo.htmlacademy.ru">
+            <fieldset class="upload-list__fieldset">
+              <input class="upload-list__button upload-list__button--crop" type="button" id="btn-crop" name="btn-crop" value="Обрезать" aria-label="Обрезать">
+              <input class="upload-list__button upload-list__button--fill" type="button" id="btn-fill" name="btn-fill" value="Заливка" aria-label="Заливка">
+              <input class="upload-list__button upload-list__button--contrast" type="button" id="btn-contrast" name="btn-contrast" value="Контрастность" aria-label="Контрастность">
+              <div class="upload-list__range range">
+                <div class="range__scale"></div>
+                <div class="range__toggle"></div>
+              </div>
+              <input class="upload-list__button-action upload-list__button-action--submit" type="submit" id="btn-submit" name="btn-submit" value="Запостить" aria-label="Запостить">
+              <input class="upload-list__button-action upload-list__button-action--reset" type="reset" id="btn-reset" name="btn-reset" value="Отмена" aria-label="Отмена">
+            </fieldset>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
