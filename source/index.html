@@ -3,30 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк | Главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="#" width="74" height="23" alt="Логотип PINK">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип PINK">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list list">
-            <li class="list__item list__item--active"><a>Главная</a></li>
-            <li class="list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="list__item"><a href="form.html">Конкурс</a></li>
-            <li class="list__item"><a href="http://htmlacademy.ru">Html Academy</a></li>
+            <li class="list__item list__item--active"><a class="list__link" href="#">Главная</a></li>
+            <li class="list__item"><a class="list__link" href="photo.html">Фотографии</a></li>
+            <li class="list__item"><a class="list__link" href="form.html">Конкурс</a></li>
+            <li class="list__item"><a class="list__link" href="http://htmlacademy.ru">Html Academy</a></li>
           </ul>
         </div>
       </nav>
-      <p class="page-header__title">Взгляните на жизнь иначе!</p>
-      <img class="page-header__title-image" src="#" width="320" height="314" alt="Телефон в руке">
+      <div class="page-header__wrapper-title">
+        <p class="page-header__title">Взгляните на жизнь иначе!</p>
+        <img class="page-header__title-image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Телефон в руке">
+      </div>
       <div class="download">
         <a class="download__link button" href="#">Скачать приложение</a>
-        <a href="#"><img class="download__icon download__icon--ios" src="#" width="47" height="56" alt="Иконка Apple"></a>
-        <a href="#"><img class="download__icon download__icon--android" src="#" width="43" height="47" alt="Иконка Android"></a>
-        <a href="#"><img class="download__icon download__icon--win" src="#" width="44" height="41" alt="Иконка Windows"></a>
+        <div class="download__wrapper">
+          <a href="#"><img class="download__icon download__icon--ios" src="img/logo-apple.svg" width="47" height="56" alt="Иконка Apple"></a>
+          <a href="#"><img class="download__icon download__icon--android" src="img/logo-android.svg" width="43" height="47" alt="Иконка Android"></a>
+          <a href="#"><img class="download__icon download__icon--win" src="img/logo-microsoft.svg" width="44" height="41" alt="Иконка Windows"></a>
+        </div>
         <p class="download__recitation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </header>
@@ -50,7 +58,7 @@
             <p class="description__report">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="description__image" src="#" width="157" height="320" alt="Телефон со смайликом">
+        <img class="description__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Телефон со смайликом">
       </section>
       <section class="comments">
         <div class="comments__wrapper slider-comments">
