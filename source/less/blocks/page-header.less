@@ -4,11 +4,13 @@
 
 .page-header__wrapper {
   position: relative;
+
   height: 69px;
 }
 
 .page-header__wrapper::after {
   content: url("@{imgDir}/icon-menu-cross.svg");
+
   position: absolute;
   top: 20px;
   right: 20px;
@@ -16,6 +18,7 @@
 
 .page-header__logo-image {
   padding: 20px;
+
   vertical-align: bottom;
 }
 
@@ -25,13 +28,15 @@
 }
 
 .page-header__title {
-  color: #ffffff;
-  font-size: @fs-xl;
-  font-weight: lighter;
   width: 230px;
-  text-align: center;
   margin: 0 auto;
   padding: 32px 0;
+
+  font-size: @fs-xl;
+  font-weight: lighter;
+  text-align: center;
+  color: #ffffff;
+
 }
 
 .page-header__title-image {

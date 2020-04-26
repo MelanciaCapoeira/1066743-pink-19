@@ -31,9 +31,9 @@
       <div class="download">
         <a class="download__link button" href="#">Скачать приложение</a>
         <div class="download__wrapper">
-          <a href="#"><img class="download__icon download__icon--ios" src="img/logo-apple.svg" width="47" height="56" alt="Иконка Apple"></a>
-          <a href="#"><img class="download__icon download__icon--android" src="img/logo-android.svg" width="43" height="47" alt="Иконка Android"></a>
-          <a href="#"><img class="download__icon download__icon--win" src="img/logo-microsoft.svg" width="44" height="41" alt="Иконка Windows"></a>
+          <a href="https://apps.apple.com"><img class="download__icon download__icon--ios" src="img/logo-apple.svg" width="47" height="56" alt="Иконка Apple"></a>
+          <a href="https://play.google.com"><img class="download__icon download__icon--android" src="img/logo-android.svg" width="43" height="47" alt="Иконка Android"></a>
+          <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?icid=CNavAppsWindowsPhoneApps"><img class="download__icon download__icon--win" src="img/logo-microsoft.svg" width="44" height="41" alt="Иконка Windows"></a>
         </div>
         <p class="download__recitation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
@@ -42,8 +42,10 @@
       <h1 class="visually-hidden">PINK - приложение для ваших фото. Раскрась свою жизнь.</h1>
       <section class="description">
         <h2 class="visually-hidden">Описание возможностей приложения PINK</h2>
-        <p class="description__introduction">Устали от серости мегаполиса?</p>
-        <p class="description__introduction">Нам есть, что вам предложить!</p>
+        <div class="description__wrapper">
+          <p class="description__introduction">Устали от серости мегаполиса?</p>
+          <p class="description__introduction">Нам есть, что вам предложить!</p>
+        </div>
         <ul class="description__list">
           <li class="description__item">
             <h3 class="description__title">Поднимает настроение</h3>
@@ -88,27 +90,27 @@
         <h2 class="visually-hidden">Тарифы PINK</h2>
         <div class="price__wrapper slider-price">
           <table class="price__list">
-            <tr>
+            <tr class="price__row">
               <td class="price__title">Стандарт</td>
               <td class="price__title">Стандарт</td>
               <td class="price__title">Стандарт</td>
             </tr>
-            <tr>
+            <tr class="price__row">
               <td class="price__cost">3,99 USD</td>
               <td class="price__cost">3,99 USD</td>
               <td class="price__cost">3,99 USD</td>
             </tr>
-            <tr>
+            <tr class="price__row">
               <td class="price__options price__options--enabled">Розовый фильтр</td>
               <td class="price__options price__options--enabled">Розовый фильтр</td>
               <td class="price__options price__options--enabled">Розовый фильтр</td>
             </tr>
-            <tr>
+            <tr class="price__row">
               <td class="price__options price__options--enabled">Смайлики</td>
               <td class="price__options price__options--enabled">Смайлики</td>
               <td class="price__options price__options--enabled">Смайлики</td>
             </tr>
-            <tr>
+            <tr class="price__row">
               <td class="price__options price__options--disabled">Комментарии</td>
               <td class="price__options price__options--disabled">Комментарии</td>
               <td class="price__options price__options--disabled">Комментарии</td>
@@ -123,17 +125,16 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты PINK</h2>
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="contacts__description">Звоните:</p>
-        <a class="contacts__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        <p class="contacts__description">Пишите:</p>
-        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        <p class="contacts__description">Приезжайте в гости:</p>
-        <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
-        <div class="contacts__map map">
-          <iframe class="map__map" src="#"></iframe>
-          <img class="map__marker" src="#" alt="ул. Большая Конюшенная, 19/8" width="36" height="35" aria-label="открыть карту">
+        <div class="contacts__wrapper">
+          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__description">Звоните:</p>
+          <a class="contacts__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <p class="contacts__description">Пишите:</p>
+          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <p class="contacts__description">Приезжайте в гости:</p>
+          <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
         </div>
+        <img class="contacts__map-marker" src="img/icon-map-marker.svg" alt="ул. Большая Конюшенная, 19/8" width="36" height="36" aria-label="открыть карту">
       </section>
     </main>
   </body>

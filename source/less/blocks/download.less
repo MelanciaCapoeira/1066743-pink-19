@@ -1,9 +1,10 @@
 .download {
-  height: 271px;
   display: flex;
+  min-height: 271px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
   background-color: @dark;
 }
 
@@ -17,25 +18,28 @@
 .download__link {
   width: 275px;
   min-height: 49px;
-  border: 3px solid #ffffff;
-  border-radius: 49px;
-  text-align: center;
-  vertical-align: middle;
+  margin-top: 28px;
+
   text-transform: none;
   font-size: 18px;
   line-height: 49px;
   font-weight: bold;
-  margin-top: 28px;
+  text-align: center;
+  vertical-align: middle;
+
+  border: 3px solid #ffffff;
+  border-radius: 49px;
 }
 
 .download__recitation {
   display: block;
   width: 230px;
+  margin: 0;
+  margin-bottom: 35px;
+
   text-align: center;
   font-size: @fs-m;
   font-weight: lighter;
   line-height: 24px;
   color: #ffffff;
-  margin: 0;
-  margin-bottom: 35px;
 }
