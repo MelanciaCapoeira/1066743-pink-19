@@ -1,0 +1,39 @@
+.social {
+  width: calc(100% - (88px * 2));
+  margin: 55px auto 57px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__image {
+  position: relative;
+
+  display: block;
+
+  fill: #d22856;
+}
+
+.social__image::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 40px;
+  height: 40px;
+  margin: -23px 0 0 -23px;
+
+  border: 3px solid @dark;
+  border-radius: 50%;
+  opacity: 0.1;
+}
