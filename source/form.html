@@ -28,13 +28,13 @@
         <p class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
       </div>
     </header>
-    <main>
+    <main class="page-form">
       <h1 class="visually-hidden">Конкурс PINK</h1>
       <section class="member-profile">
         <h2 class="visually-hidden">Анкета участника</h2>
-        <p class="member-profile__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="member-profile__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <form class="member-profile__form" method="POST" action="https://echo.htmlacademy.ru">
-          <fieldset class="member-profile__fieldset member-profile__fieldset--write fieldset">
+          <fieldset class="member-profile__fieldset fieldset fieldset--write">
             <ul class="fieldset__list">
               <li class="fieldset__item">
                 <label class="fieldset__label" for="surname">Фамилия:</label>
@@ -50,36 +50,36 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="member-profile__fieldset member-profile__fieldset--check fieldset">
+          <fieldset class="member-profile__fieldset fieldset fieldset--check">
             <legend class="fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="fieldset__list">
               <li class="fieldset__item">
-                <input class="fieldset__input fieldset__input--checkbox" type="checkbox" name="selfy-shark" id="selfy-shark" aria-label="Сделал селфи с акулой" checked>
+                <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="selfy-shark" id="selfy-shark" aria-label="Сделал селфи с акулой" checked>
                 <label class="fieldset__label fieldset__label--checkbox" for="selfy-shark">Сделал селфи с акулой</label>
               </li>
               <li class="fieldset__item">
-                <input class="fieldset__input fieldset__input--checkbox" type="checkbox" name="burn-on-sun" id="burn-on-sun" aria-label="Обгорел на пляже" checked>
+                <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="burn-on-sun" id="burn-on-sun" aria-label="Обгорел на пляже" checked>
                 <label class="fieldset__label fieldset__label--checkbox" for="burn-on-sun">Обгорел на пляже</label>
               </li>
               <li class="fieldset__item">
-                <input class="fieldset__input fieldset__input--checkbox" type="checkbox" name="saw-cn" id="saw-cn" aria-label="Видел Чака Норриса">
+                <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="saw-cn" id="saw-cn" aria-label="Видел Чака Норриса">
                 <label class="fieldset__label fieldset__label--checkbox" for="saw-cn">Видел Чака Норриса</label>
               </li>
               <li class="fieldset__item">
-                <input class="fieldset__input fieldset__input--checkbox" type="checkbox" name="bought-gifts" id="bought-gifts" aria-label="Накупил сувениров">
+                <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="bought-gifts" id="bought-gifts" aria-label="Накупил сувениров">
                 <label class="fieldset__label fieldset__label--checkbox" for="bought-gifts">Накупил сувениров</label>
               </li>
               <li class="fieldset__item">
-                <input class="fieldset__input fieldset__input--checkbox" type="checkbox" name="catch-tower" id="catch-tower" aria-label="Удержал башню" checked>
+                <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="catch-tower" id="catch-tower" aria-label="Удержал башню" checked>
                 <label class="fieldset__label fieldset__label--checkbox" for="catch-tower">Удержал башню</label>
               </li>
               <li class="fieldset__item">
-                <input class="fieldset__input fieldset__input--checkbox" type="checkbox" name="smash-hotel" id="smash-hotel" aria-label="Разгромил отель">
+                <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="smash-hotel" id="smash-hotel" aria-label="Разгромил отель">
                 <label class="fieldset__label fieldset__label--checkbox" for="smash-hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="member-profile__fieldset member-profile__fieldset--write fieldset">
+          <fieldset class="member-profile__fieldset fieldset fieldset--write">
             <ul class="fieldset__list">
               <li class="fieldset__item">
                 <label class="fieldset__label" for="tel">Номер телефона</label>
@@ -91,33 +91,33 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="member-profile__fieldset member-profile__fieldset--radio fieldset">
+          <fieldset class="member-profile__fieldset fieldset fieldset--radio">
             <legend class="fieldset__legend">С каким приложением путешествовали?</legend>
             <ul class="fieldset__list">
               <li class="fieldset__item">
-                <input class="fieldset__input fieldset__input--radio" type="radio" name="app" id="ios" value="Pink для iOS" aria-label="Pink для iOS" checked>
+                <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="app" id="ios" value="Pink для iOS" aria-label="Pink для iOS" checked>
                 <label class="fieldset__label fieldset__label--radio" for="ios">Pink для iOS</label>
               </li>
               <li class="fieldset__item">
-                <input class="fieldset__input fieldset__input--radio" type="radio" name="app" id="android" value="Pink на Android" aria-label="Pink на Android">
+                <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="app" id="android" value="Pink на Android" aria-label="Pink на Android">
                 <label class="fieldset__label fieldset__label--radio" for="android">Pink на Android</label>
               </li>
               <li class="fieldset__item">
-                <input class="fieldset__input fieldset__input--radio" type="radio" name="app" id="win" value="Windows Phone" aria-label="Windows Phone">
+                <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="app" id="win" value="Windows Phone" aria-label="Windows Phone">
                 <label class="fieldset__label fieldset__label--radio" for="win">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="member-profile__fieldset member-profile__fieldset--textarea fieldset">
+          <fieldset class="member-profile__fieldset fieldset fieldset--textarea">
             <legend class="fieldset__legend">Опишите свои эмоции</legend>
             <ul class="fieldset__list">
               <li class="fieldset__item">
                 <label class="fieldset__label visually-hidden" for="emotions">Опишите свои эмоции:</label>
-                <textarea name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Опишите свои эмоции"></textarea>
+                <textarea class="fieldset__textarea" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Опишите свои эмоции"></textarea>
               </li>
             </ul>
           </fieldset>
-          <input class="member-profile__submit" type="submit" value="Отправить форму" aria-label="Отправить форму">
+          <input class="member-profile__submit button" type="submit" value="Отправить форму" aria-label="Отправить форму">
           <p class="member-profile__notacion"><span class="member-profile__notacion member-profile__notacion--red">*</span> — обязательные поля</p>
         </form>
       </section>
@@ -153,7 +153,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__logo-html" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
           </svg>
@@ -163,13 +163,13 @@
     <div class="warning">
       <p class="warning__title">Что-то пошло не так!</p>
       <p class="warning__notation">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="warning__button" type="button">Oк</button>
+      <button class="warning__button button" type="button">Oк</button>
     </div>
     <div class="done">
       <p class="done__title">Ваша заявка отправлена</p>
       <p class="done__notation">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       <div class="done__wrapper">
-        <button class="done__button" type="button">Закрыть окно</button>
+        <button class="done__button button" type="button">Закрыть окно</button>
       </div>
     </div>
   </body>
