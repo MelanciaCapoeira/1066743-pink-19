@@ -166,23 +166,41 @@
       </section>
       <section class="upload">
         <h2 class="visually-hidden">Загрузить картинку PINK</h2>
-        <p class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="upload__wrapper upload-list">
-          <input class="upload-list__img" type="file" id="user-img" name="user-img" accept=".png, .jpg, .jpeg">
-          <form  class="upload-list__form" method="GET" action="https://echo.htmlacademy.ru">
-            <fieldset class="upload-list__fieldset">
-              <input class="upload-list__button upload-list__button--crop" type="button" id="btn-crop" name="btn-crop" value="Обрезать" aria-label="Обрезать">
-              <input class="upload-list__button upload-list__button--fill" type="button" id="btn-fill" name="btn-fill" value="Заливка" aria-label="Заливка">
-              <input class="upload-list__button upload-list__button--contrast" type="button" id="btn-contrast" name="btn-contrast" value="Контрастность" aria-label="Контрастность">
-              <div class="upload-list__range range">
-                <div class="range__scale"></div>
-                <div class="range__toggle"></div>
-              </div>
-              <input class="upload-list__button-action upload-list__button-action--submit" type="submit" id="btn-submit" name="btn-submit" value="Запостить" aria-label="Запостить">
-              <input class="upload-list__button-action upload-list__button-action--reset" type="reset" id="btn-reset" name="btn-reset" value="Отмена" aria-label="Отмена">
-            </fieldset>
-          </form>
+        <p class="upload__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="upload-list upload-list__wrapper">
+          <input class="upload-list__img visually-hidden" type="file" id="user-img" name="user-img" accept=".png, .jpg, .jpeg">
         </div>
+        <form  class="upload-list__form" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset class="upload-list__fieldset">
+            <div class="upload-list__button-wrapper">
+              <button class="upload-list__button" type="button" aria-label="Обрезать">
+                <svg class="upload-list__button--crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="44px" height="44px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                </svg>
+              </button>
+              <button class="upload-list__button" type="button" id="btn-fill" name="btn-fill" value="Заливка" aria-label="Заливка">
+                <svg class="upload-list__button--fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="43px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                  <rect y="40" width="48" height="3"/>
+                </svg>
+              </button>
+              <button class="upload-list__button" type="button" id="btn-contrast" name="btn-contrast" value="Контрастность" aria-label="Контрастность">
+                <svg class="upload-list__button--contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                </svg>
+              </button>
+            </div>
+            <div class="upload-list__range range">
+              <div class="range__scale"></div>
+              <div class="range__toggle"></div>
+            </div>
+            <input class="button button--red upload-list__button-action upload-list__button-action--submit" type="submit" id="btn-submit" name="btn-submit" value="Запостить" aria-label="Запостить">
+            <input class="button button--dark upload-list__button-action upload-list__button-action--reset" type="reset" id="btn-reset" name="btn-reset" value="Отмена" aria-label="Отмена">
+          </fieldset>
+        </form>
       </section>
     </main>
     <footer class="page-footer">

@@ -10,8 +10,11 @@
 }
 
 .price__list {
-  background-color: #ffffff;
   width: 828px;
+  margin-left: -80%;
+
+  background-color: #ffffff;
+  border-collapse: collapse;
 }
 
 .price__row:first-of-type,
@@ -23,14 +26,24 @@
   background-color: @dark;
 }
 
-.price__title {
+.price__title,
+.price__cost {
   width: 276px;
+
+  border-right: 2px solid #f2f2f2;
+  border-left: 2px solid #f2f2f2;
+}
+
+.price__title {
+  padding-top: 10px;
 
   font-size: @fs-l;
   font-weight: bold;
 }
 
 .price__cost {
+  padding-bottom: 10px;
+
   font-size: @fs-xl;
   font-weight: lighter;
 }
@@ -40,4 +53,7 @@
   padding-left: 20px;
 
   line-height: 30px;
+  text-transform: uppercase;
+
+  border: 2px solid #f2f2f2;
 }
