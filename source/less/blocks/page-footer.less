@@ -5,3 +5,19 @@
   align-items: center;
   padding-top: 40px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

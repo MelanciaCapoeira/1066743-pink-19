@@ -1,29 +1,97 @@
 .download {
-  display: flex;
-  min-height: 271px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  min-height: 270px;
 
-  background-color: @dark;
+  background-color: @darkslateblue-color;
+
+  @media @tablet-width {
+    .container();
+    position: relative;
+    z-index: 10;
+
+    margin-top: -540px;
+    margin-bottom: 80px;
+
+    background-color: transparent;
+  }
+
+  @media @desktop-width {
+    margin-top: -650px;
+    margin-bottom: 90px;
+  }
+}
+
+.download__text {
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 50px;
+    font-weight: @light;
+    text-align: center;
+
+    @media @desktop-width {
+      width: 250px;
+      margin-bottom: 50px;
+
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+}
+
+.download__markets {
+  display: flex;
+  justify-content: center;
+}
+
+.download__link {
+  margin: 0 17px;
 }
 
 .download__wrapper {
-  width: 205px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media @mobile-width-only {
+    .container();
+    padding-top: 26px;
+  }
+
+  @media @tablet-width {
+    width: 300px;
+    padding-top: 15px;
+  }
+
+  @media @desktop-width {
+    padding-top: 20px;
+  }
 }
 
-.download__recitation {
+.download__description {
   display: block;
   width: 230px;
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 20px auto 0;
+  padding-bottom: 30px;
 
   text-align: center;
-  font-size: @fs-m;
-  font-weight: lighter;
+  font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+
+  @media @tablet-width {
+    margin-top: 35px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: @light;
+  }
+
+  @media @desktop-width {
+    margin-top: 55px;
+
+    font-size: 18px;
+  }
 }

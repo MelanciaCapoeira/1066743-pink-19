@@ -1,5 +1,5 @@
 .price {
-  background: url("@{imgDir}/bg-triangle-white.svg") no-repeat 50% 0%;
+  background: url("../../img/bg-triangle-white.svg") no-repeat 50% 0%;
 }
 
 .price__wrapper {
@@ -23,29 +23,29 @@
   color: #ffffff;
   text-align: center;
 
-  background-color: @dark;
+  background-color: @darkviolet-color;
 }
 
 .price__title,
 .price__cost {
   width: 276px;
 
-  border-right: 2px solid #f2f2f2;
-  border-left: 2px solid #f2f2f2;
+  border-right: 2px solid @whitesmoke-color;
+  border-left: 2px solid @whitesmoke-color;
 }
 
 .price__title {
   padding-top: 10px;
 
-  font-size: @fs-l;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: @bold;
 }
 
 .price__cost {
   padding-bottom: 10px;
 
-  font-size: @fs-xl;
-  font-weight: lighter;
+  font-size: 24px;
+  font-weight: @light;
 }
 
 .price__options {
@@ -55,5 +55,5 @@
   line-height: 30px;
   text-transform: uppercase;
 
-  border: 2px solid #f2f2f2;
+  border: 2px solid @whitesmoke-color;
 }

@@ -12,7 +12,18 @@
   text-align: center;
 }
 
+.member-profile__title-span,
+.member-profile_notification-span {
+  display: none;
+}
+
 .member-profile__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-profile__submit-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,5 +37,49 @@
 }
 
 .member-profile__notacion--red {
-  color: @red;
+  color: @crimson-color;
+}
+
+@media (min-width: @tablet-width) {
+  .member-profile__title {
+    margin: 0;
+    padding: 95px 85px 70px;
+
+
+    line-height: 30px;
+  }
+
+  .member-profile__title-span {
+    display: inline;
+  }
+
+  .member-profile__submit-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 0 50px;
+
+    order: 6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .member-profile__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .member-profile__submit-wrapper {
+    width: 100%;
+  }
+
+  .member-profile_notification-span {
+    display: inline;
+  }
+
+  .member-profile__title {
+    font-size: 18px;
+  }
 }
