@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   background-position: center bottom;
 
+  z-index: 10000;
+
   &--inner {
     background-position: center bottom -222px;
   }
@@ -26,7 +28,7 @@
   }
 }
 
-@media (min-width: 320px) and (min-resolution: 144dpi),(min-width: 320px) and (min-resolution: 1.5dppx) {
+@media (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
   .page-header {
     background-image: url("../../img/bg-back-mobile@2x.jpg");
     background-size: 700px 466px;
@@ -37,7 +39,7 @@
   }
 }
 
-@media (min-width: 660px) and (min-resolution: 144dpi),(min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .page-header {
     background-image: url("../../img/bg-back-tablet@2x.jpg");
     background-size: 1200px 729px;
@@ -48,7 +50,7 @@
   }
 }
 
-@media (min-width: 960px) and (min-resolution: 144dpi),(min-width: 960px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .page-header {
     background-image: url("../../img/bg-back-desktop@2x.jpg");
     background-size: 2560px 865px;
@@ -98,6 +100,7 @@
   padding-bottom: 82px;
   padding-left: 20px;
   padding-right: 20px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: @light;
@@ -113,6 +116,7 @@
     margin: auto;
     padding-top: 71px;
     padding-bottom: 80px;
+
     font-size: 50px;
     line-height: 58px;
     font-weight: @light;
@@ -130,6 +134,7 @@
     width: 350px;
     padding-top: 74px;
     padding-bottom: 140px;
+
     font-size: 50px;
     line-height: 58px;
     font-weight: @light;

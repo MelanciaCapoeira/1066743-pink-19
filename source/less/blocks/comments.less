@@ -3,16 +3,169 @@
 }
 
 .comments__list {
-  margin: 0;
-  padding: 0 20px;
+  .list-clear-indent();
+  padding-top: 45px;
 
-  text-align: center;
-  list-style: none;
+  @media @tablet-width {
+    padding-top: 90px;
+  }
+
+  @media @desktop-width {
+    padding-top: 185px;
+  }
 }
 
-.comments__title {
+.comments__item {
+  @media @tablet-width {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.comments__item:nth-child(n+2) {
+  display: none;
+}
+
+.comments__wrapper {
+  .container();
+  position: relative;
+
+  @media @desktop-width {
+    padding-bottom: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 73px;
+      left: 435px;
+
+      display: block;
+      box-sizing: border-box;
+      width: 100px;
+      height: 100px;
+
+      background: url("../../img/icon-quotes.svg") no-repeat 0 0;
+    }
+  }
+}
+
+.comments__author {
+  margin: 0;
+  padding-bottom: 12px;
+
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: @bold;
-  color: #000000;
+  text-align: center;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+
+    order: 2;
+  }
+
+  @media @desktop-width {
+    font-size: 24px;
+  }
+}
+
+.comments__author-description {
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+
+    font-size: 14px;
+    font-weight: @regular;
+  }
+
+  @media @desktop-width {
+    font-size: 18px;
+  }
+}
+
+.comments__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: @regular;
+  text-align: center;
+
+  @media @tablet-width {
+    padding-bottom: 35px;
+
+    font-size: 18px;
+
+    order: -1;
+  }
+
+  @media @desktop-width {
+    width: 680px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+}
+
+.comments__controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  padding-bottom: 37px;
+
+  @media @tablet-width {
+    margin-top: 25px;
+    padding-bottom: 17px;
+  }
+
+  @media @desktop-width {
+    display: none;
+  }
+}
+
+.comments__toggle {
+  display: none;
+  width: 22px;
+  height: 41px;
+
+  border: none;
+  background-color: transparent;
+  opacity: 0.3;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  @media @desktop-width {
+    position: absolute;
+    top: 50%;
+
+    display: block;
+  }
+}
+
+.comments__toggle--prev {
+  left: 0;
+
+  background-image: url("../../img/icon-review-arrow-left.svg");
+}
+
+.comments__toggle--next {
+  right: 0;
+
+  background-image: url("../../img/icon-review-arrow-right.svg");
+}
+
+.comments__quotes {
+  @media @desktop-width {
+    display: none;
+  }
 }

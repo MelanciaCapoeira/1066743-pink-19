@@ -8,18 +8,116 @@
   font-weight: lighter;
   text-align: center;
 
-  background: url("../../img/bg-triangle-white-footer.svg") no-repeat 50% 415px,
-    url("../../img/bg-map-mobile@1x.png") no-repeat;
+  background: url("../../img/bg-map-mobile@1x.png") no-repeat;
+
+  @media @tablet-width {
+    background: url("../../img/bg-map-tablet@1x.jpg") no-repeat;
+  }
+
+  @media @desktop-width {
+    background: url("../../img/bg-map-desktop@1x.jpg") no-repeat;
+  }
 }
 
 .contacts__wrapper {
+  position: relative;
+
   background-color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+
+    display: block;
+    width: 100%;
+    height: 35px;
+
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat bottom center;
+    background-size: 100% 100%;
+
+    z-index: 100;
+
+    @media @tablet-width {
+      bottom: -70px;
+
+      height: 70px;
+    }
+
+    @media @desktop-width {
+      bottom: -105px;
+
+      height: 105px;
+    }
+  }
 }
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 42px;
-  padding-top: 50px;
+  padding-top: 40px;
+
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: @light;
+
+  @media @tablet-width {
+    width: 420px;
+    margin: 0 auto;
+    padding-top: 45px;
+
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: @light;
+  }
+
+  @media @desktop-width {
+    width: 470px;
+    padding-top: 65px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.contacts__list {
+  .list-clear-indent();
+  padding-bottom: 40px;
+  padding-top: 25px;
+
+  @media @tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 15px;
+  }
+
+  @media @desktop-width {
+    padding-top: 40px;
+    margin-bottom: 19px;
+  }
+}
+
+.contacts__item {
+  width: 240px;
+  margin: 0 auto;
+
+  text-align: center;
+  margin-bottom: 16px;
+
+  @media @desktop-width {
+    &:first-child {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:last-child {
+      order: 2;
+    }
+  }
 }
 
 .contacts__description {
@@ -28,15 +126,32 @@
 
   font-size: 18px;
   font-weight: @bold;
+
+  @media @desktop-width {
+    margin-bottom: 15px;
+  }
 }
 
 .contacts__tel,
 .contacts__email,
 .contacts__address {
-  padding: 0 20px 25px;
+  font-size: 24px;
   color: @crimson-color;
   text-transform: none;
   font-style: normal;
+  text-decoration: none;
+}
+
+.contacts__email {
+  &:hover {
+    color: @darkviolet-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    color: @darkviolet-color;
+  }
 }
 
 .contacts__map-marker {
