@@ -1,0 +1,39 @@
+.original-btn {
+  width: 280px;
+  padding: 22px 15px;
+
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: @bold;
+  color: white;
+
+  background-color: @seagreen-color;
+  border: none;
+  border-radius: 3px;
+
+  box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #61b98f;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  @media @tablet-width {
+    width: 300px;
+  }
+}
+
+.original-btn--popup {
+  @media @desktop-width {
+    width: 460px;
+  }
+}

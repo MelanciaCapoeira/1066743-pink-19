@@ -1,0 +1,39 @@
+.list-clear-indent() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container() {
+  width: 280px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    width: 620px;
+  }
+
+  @media @desktop-width {
+    width: 960px;
+  }
+}
+
+.container-custom() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    width: 660px;
+  }
+
+  @media @desktop-width {
+    width: 1200px;
+  }
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

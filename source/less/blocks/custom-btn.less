@@ -1,0 +1,92 @@
+.custom-btn {
+  display: block;
+  padding: 16px 15px;
+  width: 280px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: @bold;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.custom-btn--post,
+.custom-btn--cancel-post {
+  color: @crimson-color;
+
+  border: 3px solid;
+
+  @media @tablet-width {
+    width: 260px;
+  }
+
+  @media @desktop-width {
+    width: 180px;
+  }
+}
+
+.custom-btn--post {
+  &:hover {
+    color: #ffffff;
+
+    background-color: @crimson-color;
+  }
+
+  &:active {
+    color: #e08195;
+  }
+}
+
+.custom-btn--cancel-post {
+  color: @darkviolet-color;
+
+  border: 3px solid @darkviolet-color;
+
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: #cbced2;
+
+    background-color: #b5b9be;
+  }
+}
+
+.custom-btn--download {
+  margin-bottom: 20px;
+
+  &:hover {
+    color: @crimson-color;
+
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: lighten(@crimson-color, 30%);
+
+    background-color: #ffffff;
+  }
+
+  @media @tablet-width {
+    width: 295px;
+    margin-bottom: 35px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 55px;
+
+    font-size: 21px;
+    line-height: 18px;
+  }
+}

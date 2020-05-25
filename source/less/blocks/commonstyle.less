@@ -1,21 +1,49 @@
 body {
+  width: 320px;
   margin: 0 auto;
 
-  width: 320px;
+  @media @tablet-width {
+    width: 660px;
+  }
+
+  @media @desktop-width {
+    width: 1200px;
+  }
 
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: @fs-m;
-  color: @dark;
-
-  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  color: @darkviolet-color;
+  font-weight: @regular;
 }
 
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.button {
-  display: block;
+::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  text-align: left;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+picture {
+  font-size: 0;
+}
+
+.svg-defs {
+  display: none;
 }
