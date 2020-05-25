@@ -136,6 +136,7 @@
   position: relative;
   padding-top: 16px;
   padding-bottom: 14px;
+
   text-decoration: none;
   text-align: center;
   font-size: 18px;
@@ -160,6 +161,7 @@
   @media @desktop-width {
     padding-top: 46px;
     padding-bottom: 10px;
+
     font-size: 18px;
     line-height: 18px;
     font-weight: @regular;
@@ -180,12 +182,13 @@
 
 .main-nav__item {
   text-align: center;
+
   border-bottom: 1px solid @dimgray-color;
   border-top: 1px solid #485461;
 
   @media @desktop-width {
     display: inline-block;
-    border-bottom: 0;
+    border-top: 0;
   }
 }
 
@@ -208,13 +211,15 @@
     float: left;
     width: 160px;
     padding-left: 0;
-    border-bottom: none;
+
+    border-top: none;
   }
 }
 
 .main-nav__logo {
   height: 23px;
   width: 74px;
+  margin-top: 5px;
 
   @media @tablet-width {
     height: 40px;
@@ -253,6 +258,7 @@
 }
 
 .main-nav__inner-link {
+  display: block;
   fill: #ffffff;
 
   &:hover {
