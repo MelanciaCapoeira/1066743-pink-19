@@ -7,8 +7,10 @@
 
   @media @tablet-width {
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
+    align-self: center;
     flex-basis: 130px;
+    margin-top: 5px;
   }
 
   @media @desktop-width {
@@ -41,4 +43,25 @@
 .copyright__logo {
   width: 30px;
   height: 35px;
+
+  @media @tablet-width {
+    margin-left: 12px;
+    margin-top: 10px;
+  }
+
+  @media @desktop-width {
+    margin-left: 12px;
+    margin-top: 5px;
+  }
+}
+
+.copyright__text {
+  @media @tablet-width {
+    margin: 0;
+    align-self: center;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 3px;
+  }
 }
