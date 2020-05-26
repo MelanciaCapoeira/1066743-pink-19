@@ -14,7 +14,9 @@
 
   @media @desktop-width {
     .clearfix();
-    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
     margin: 0 auto;
   }
 }
@@ -23,10 +25,10 @@
   .list-clear-indent();
 
   @media @desktop-width {
-    float: right;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     width: 625px;
+    margin-left: 163px;
     padding-bottom: 27px;
   }
 }
@@ -209,9 +211,9 @@
   @media @desktop-width {
     flex-direction: column;
     justify-content: center;
-    float: left;
     width: 160px;
-    padding-left: 0;
+    padding-left: 4px;
+    padding-bottom: 3px;
 
     border-top: none;
   }
@@ -225,6 +227,8 @@
   @media @tablet-width {
     height: 40px;
     width: 146px;
+    margin-top: 0;
+    margin-bottom: 3px;
   }
 }
 

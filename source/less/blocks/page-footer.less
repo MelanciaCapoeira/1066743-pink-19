@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
 }
 
 @media (min-width: @tablet-width) {
@@ -40,6 +39,7 @@
 
   @media @desktop-width {
     height: 200px;
+    width: 940px;
   }
 }
 
@@ -77,6 +77,10 @@
     width: 152px;
     height: 43px;
   }
+
+  @media @desktop-width {
+    margin-bottom: 6px;
+  }
 }
 
 .page-footer__logo-icon {
@@ -112,4 +116,14 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+
+  vertical-align: bottom;
+
+  @media @tablet-width {
+    min-height: 370px;
+  }
+
+  @media @desktop-width {
+    min-height: 505px;
+  }
 }
