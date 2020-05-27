@@ -6,10 +6,11 @@
 
 .member-profile__title {
   margin: 0;
-  padding: 40px 20px;
+  padding: 45px 20px 35px;
 
   line-height: 30px;
   text-align: center;
+
 }
 
 .member-profile__title-span,
@@ -30,7 +31,7 @@
 }
 
 .member-profile__notacion {
-  margin: 30px 0;
+  margin: 33px 0;
 
   line-height: 30px;
   text-transform: uppercase;
@@ -43,10 +44,10 @@
 @media (min-width: 660px) {
   .member-profile__title {
     margin: 0;
-    padding: 95px 85px 70px;
-
+    padding: 93px 85px 70px;
 
     line-height: 30px;
+    font-size: 18px;
   }
 
   .member-profile__title-span {
@@ -57,30 +58,35 @@
     flex-direction: row;
     justify-content: space-between;
     width: 620px;
-    margin: 0 0 50px;
+    margin: 0 0 35px;
 
     order: 6;
   }
 }
 
 @media (min-width: 1200px) {
+  .member-profile__title {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 83px;
+
+    font-size: 18px;
+  }
+
   .member-profile__form {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    width: 960px;
+    width: 940px;
   }
 
   .member-profile__submit-wrapper {
     width: 100%;
+    margin-bottom: 0;
   }
 
   .member-profile_notification-span {
     display: inline;
-  }
-
-  .member-profile__title {
-    font-size: 18px;
   }
 }
