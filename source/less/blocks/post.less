@@ -6,12 +6,10 @@
   @media @tablet-width {
     margin-bottom: 20px;
     width: 300px;
-    min-height: 430px;
   }
 
   @media @desktop-width {
     margin-bottom: 54px;
-    min-height: 530px;
   }
 }
 
@@ -81,11 +79,12 @@
 .post__time {
   font-size: 12px;
   font-weight: @light;
+  text-transform: uppercase;
 }
 
 .post__text {
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 
   font-size: 14px;
   line-height: 24px;
@@ -136,12 +135,12 @@
     right: 20px;
 
     display: block;
-    width: 140px;
-    height: 36px;
-    padding: 5px 20px;
+    width: 120px;
+    height: 26px;
+    padding: 5px 10px;
 
     font-size: 12px;
-    line-height: 36px;
+    line-height: 26px;
     font-weight: @bold;
     font-family: "Open Sans", "Arial", sans-serif;
     text-transform: uppercase;
@@ -154,12 +153,9 @@
 
   @media @tablet-width {
     height: 509px;
-
     &::after {
       top: 57px;
       right: 20px;
-
-      padding: 5px 20px;
     }
   }
 
@@ -178,7 +174,21 @@
   top: 50%;
   left: 50%;
 
+  width: 100%;
+
   transform: translate(-50%, -50%);
+
+  @media @tablet-width {
+    height: 509px;
+  }
+
+  @media @desktop-width {
+    width: 1200px;
+  }
+}
+
+.post__photo img {
+  width: 100%;
 }
 
 .post__heart {
@@ -188,7 +198,7 @@
   height: 15px;
   outline: 2px solid red;
   margin-right: 20px;
-  background: url("../../img/icon-heart.svg") no-repeat 2px 2px;
+  background: url("../img/icon-heart.svg") no-repeat 2px 2px;
 }
 
 .post__btn {
@@ -216,7 +226,7 @@
 
   font-size: 0;
 
-  background: url("../../img/icon-heart.svg") no-repeat 2px 2px;
+  background: url("../img/icon-heart.svg") no-repeat 2px 2px;
   border: 0;
 
   cursor: pointer;

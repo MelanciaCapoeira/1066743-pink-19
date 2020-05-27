@@ -107,10 +107,11 @@
             <div class="main-nav__inner">
               <a class="main-nav__inner-link" href="index.html">
                 <svg class="main-nav__logo" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип Пинк">
-                <use class="main-nav__logo-icon main-nav__logo-icon--mobile" xlink:href="#pink-white-mobile"></use>
-                <use class="main-nav__logo-icon main-nav__logo-icon--tablet" xlink:href="#pink-white-tablet"></use>
-                <use class="main-nav__logo-icon main-nav__logo-icon--desktop" xlink:href="#pink-white-desktop"></use>
-              </svg>
+                  <use class="main-nav__logo-icon main-nav__logo-icon--mobile" xlink:href="#pink-white-mobile"></use>
+                  <use class="main-nav__logo-icon main-nav__logo-icon--tablet" xlink:href="#pink-white-tablet"></use>
+                  <use class="main-nav__logo-icon main-nav__logo-icon--desktop" xlink:href="#pink-white-desktop"></use>
+                </svg>
+              </a>
             </div>
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -155,11 +156,11 @@
           <fieldset class="member-profile__fieldset fieldset fieldset--check">
             <legend class="fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="fieldset__list">
-              <li class="fieldset__item">
+              <li class="fieldset__item fieldset__item--margin117">
                 <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="selfy-shark" id="selfy-shark" aria-label="Сделал селфи с акулой" checked>
                 <label class="fieldset__label fieldset__label--checkbox" for="selfy-shark">Сделал селфи с акулой</label>
               </li>
-              <li class="fieldset__item">
+              <li class="fieldset__item fieldset__item--margin117">
                 <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="burn-on-sun" id="burn-on-sun" aria-label="Обгорел на пляже" checked>
                 <label class="fieldset__label fieldset__label--checkbox" for="burn-on-sun">Обгорел на пляже</label>
               </li>
@@ -181,16 +182,16 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="member-profile__fieldset fieldset fieldset--write fieldset--w100">
+          <fieldset class="member-profile__fieldset fieldset fieldset--write">
             <legend class="fieldset__legend fieldset__legend--hidden">Контактная информация</legend>
-            <ul class="fieldset__list fieldset__list--row">
+            <ul class="fieldset__list fieldset__list--row fieldset__list--contacts">
               <li class="fieldset__item fieldset__item--contacts fieldset__item--contacts-tel">
                 <label class="fieldset__label" for="tel">Номер телефона</label>
                 <input class="fieldset__input fieldset__input--text" type="text" name="tel" id="tel" placeholder="Номер, пожалуйста" aria-label="Ваш телефон">
               </li>
               <li class="fieldset__item fieldset__item--contacts fieldset__item--contacts-email">
-                <label class="fieldset__label" for="email">Адрес почты</label>
-                <input class="fieldset__input fieldset__input--text" type="email" name="email" id="email" placeholder="Введите почту *" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="Ваш e-mail" required>
+                <label class="fieldset__label fieldset__label--contacts-email" for="email">Адрес почты</label>
+                <input class="fieldset__input fieldset__input--text fieldset__input--email" type="email" name="email" id="email" placeholder="Введите почту *" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="Ваш e-mail" required>
               </li>
             </ul>
           </fieldset>
@@ -228,8 +229,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__inner">
-        <div class="page-footer__logo-wrapper page-footer__logo-wrapper--photo">
+      <div class="page-footer__inner page-footer__inner--form">
+        <div class="page-footer__logo-wrapper page-footer__logo-wrapper--form">
           <a class="page-footer__logo-link" href="index.html">
             <svg class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип Пинк">
               <use class="page-footer__logo-icon page-footer__logo-icon--mobile" xlink:href="#logo-pink-blue-mobile"></use>
@@ -275,5 +276,6 @@
       </div>
     </div>
     <script src="js/drop-down-menu.js"></script>
+    <script src="js/picturefill.js" async></script>
   </body>
 </html>

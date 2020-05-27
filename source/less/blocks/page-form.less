@@ -1,7 +1,16 @@
 .page-form {
   margin: 0 auto;
+  width: 320px;
 
   background-color: #ffffff;
+
+  @media @tablet-width {
+    width: 660px;
+  }
+
+  @media @desktop-width {
+    width: 1200px
+  }
 }
 
 @media (min-width: @desktop-width) {

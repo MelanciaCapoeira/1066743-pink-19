@@ -27,7 +27,9 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 285px;
+  height: 275px;
+  margin-top: auto;
+  margin-bottom: 30px;
 
   @media @tablet-width {
     flex-direction: row;
@@ -38,7 +40,7 @@
   }
 
   @media @desktop-width {
-    height: 200px;
+    height: 160px;
     width: 940px;
   }
 }
@@ -51,6 +53,12 @@
   }
 }
 
+.page-footer__inner--form {
+  @media @desktop-width {
+    margin-bottom: 40px;
+  }
+}
+
 .page-footer__logo-wrapper {
   display: flex;
   align-items: flex-end;
@@ -58,6 +66,11 @@
 
   &--photo {
     flex-basis: 90px;
+  }
+
+  &--form {
+    flex-basis: 60px;
+    padding-top: 5px;
   }
 
   @media @tablet-width {

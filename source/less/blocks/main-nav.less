@@ -35,7 +35,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 10px;
+  top: 3px;
   right: 0;
 
   width: 56px;
@@ -61,11 +61,11 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  background-image: url("../../img/icon-menu-burger.svg");
+  background-image: url("../img/icon-menu-burger.svg");
   right: 15px;
 
   &:hover {
-    background-image: url("../../img/icon-menu-burger-hover.svg");
+    background-image: url("../img/icon-menu-burger-hover.svg");
   }
 
   &:active {
@@ -74,10 +74,10 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  background-image: url("../../img/icon-menu-cross.svg");
+  background-image: url("../img/icon-menu-cross.svg");
 
   &:hover {
-    background-image: url("../../img/icon-menu-cross-hover.svg");
+    background-image: url("../img/icon-menu-cross-hover.svg");
   }
 
   &:active {
@@ -191,7 +191,7 @@
 
   @media @desktop-width {
     display: inline-block;
-    border-top: 0;
+    border: 0;
   }
 }
 
@@ -199,7 +199,7 @@
   display: flex;
   align-items: center;
   padding-left: 20px;
-  height: 70px;
+  height: 60px;
 
   border-bottom: 1px solid @dimgray-color;
   box-sizing: border-box;
